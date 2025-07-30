@@ -12,7 +12,7 @@ import AppText from '../texts/AppText';
 import { AppColors } from '../../styles/colors';
 
 interface AppButtonProps {
-	onPress: (event: GestureResponderEvent) => void;
+	onPress?: (event: GestureResponderEvent) => void;
 	title: string;
 	backgroundColor?: string;
 	textColor?: string;

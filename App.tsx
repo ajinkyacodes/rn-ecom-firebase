@@ -1,36 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native';
-import AppText from './src/components/texts/AppText';
+import { StyleSheet } from 'react-native';
 import AppSafeView from './src/components/views/AppSafeView';
 import FlashMessage, { showMessage } from 'react-native-flash-message';
+import AppTextInput from './src/components/inputs/AppTextInput';
 import AppButton from './src/components/buttons/AppButton';
+import AppText from './src/components/texts/AppText';
 
 export default function App() {
 	return (
 		<>
 			<FlashMessage position={'top'} />
 			<AppSafeView style={styles.container}>
+				<AppTextInput placeholder={'Enter Name'} />
 				<AppButton
-					title={'Show Message'}
+					title='Click Here'
 					onPress={() =>
 						showMessage({
-							message: 'Hello World',
-							color: '#ff0',
-							type: 'danger',
-						})
-					}          
-				/>
-				<AppText
-					onPress={() =>
-						showMessage({
-							message: 'Hello World',
-							color: '#ff0',
-							type: 'danger',
+							message: 'Simple message',
+							type: 'success',
+							color: '#fff',
 						})
 					}
-					variant='bold'
-				>
-					Hello World!
-				</AppText>
+				></AppButton>
 			</AppSafeView>
 		</>
 	);
