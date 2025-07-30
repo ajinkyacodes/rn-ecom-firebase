@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rn-ecom-firebase",
-    "slug": "rn-ecom-firebase",
+    "name": "SmartEcommerce",
+    "slug": "SmartEcommerce",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
